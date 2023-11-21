@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import Avg
 from django.contrib.auth.models import User
-from coffee_reviews.models import Review
+from tea_reviews.models import TeaReview
 
 class Tea(models.Model):
     name = models.CharField(max_length=255)
@@ -12,19 +12,4 @@ class Tea(models.Model):
 
 
 
-    def __str__(self):
-        return self.name
     
-    def add_review(self, username, text, rating):
-        # Create a new Review instance and associate it with the Tea
-        review = Review.objects.create(coffee=self, user=User.objects.get(username=username), text=text, rating=rating)
-
-        # Update the average rating of the Tea based on all reviews
-        avg_rating = self.reviews.aggregate(Avg('rating'))['rating__avg']
-        if avg_rating is not None:
-            self.rating = round(avg_rating, 2)
-            self.save()
-
-    @property
-    def reviews(self):
-        return self.review_set.all()  # Use the related_name 'reviews' defined in the Review model
