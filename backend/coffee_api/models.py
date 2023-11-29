@@ -2,6 +2,7 @@ from django.db import models
 from django.db.models import Avg
 from django.contrib.auth.models import User
 from coffee_reviews.models import Review
+from coffee_like.models import Like
 
 class Coffee(models.Model):
     name = models.CharField(max_length=255)
@@ -9,6 +10,7 @@ class Coffee(models.Model):
     picture = models.FileField(upload_to="coffee/", blank=True, null=True)
     caffeine = models.PositiveIntegerField(default=0)
     rating = models.DecimalField(max_digits=3, decimal_places=2, default=3.00)
+    coffee_likes = models.ManyToManyField(Like, related_name='likes', blank=True)
 
 
 
@@ -28,3 +30,16 @@ class Coffee(models.Model):
     @property
     def reviews(self):
         return self.review_set.all()  # Use the related_name 'reviews' defined in the Review model
+    
+
+    def add_to_coffee_likes(self, user_name):
+        if not self.coffee_likes.filter(user_name=user_name).exist():
+            like=Like.objects.create(user_name)
+            self.coffee_likes.add(like)
+            return {'message': 'You like this coffee!'}
+        else:
+            return {'message': 'You have liked this coffee already'}
+        
+
+    def __str__(self):
+        return self.coffee_likes

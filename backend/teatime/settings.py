@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'coffee_reviews',
     'rest_framework',
     'rest_framework.authtoken',
+    'coffee_like',
 ]
 
 MIDDLEWARE = [
@@ -97,7 +98,7 @@ DATABASES = {
 "USER": "postgres",
 "PASSWORD": "postgres",
 "HOST": "localhost",
-"PORT": 5432,
+"PORT": 5454,
     }
 }
 

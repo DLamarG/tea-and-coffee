@@ -1,9 +1,11 @@
 from rest_framework import serializers
 from .models import Coffee
 from coffee_reviews.serializers import ReviewSerializer
+from coffee_like.serializers import LikeSerializer
 
 class CoffeeSerializer(serializers.ModelSerializer):
     reviews = ReviewSerializer(many=True, read_only=True)
+    likes = LikeSerializer(many=True, read_only=True)
     class Meta:
         model = Coffee
         fields = '__all__'
