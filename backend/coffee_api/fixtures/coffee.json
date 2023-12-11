@@ -5,7 +5,7 @@
       "fields": {
         "name": "ethiopian_yirgacheffe",
         "description": "Known for its bright acidity, floral notes, and fruity flavors, often with hints of citrus and berries.",
-        "picture": "coffee/ethiopian_yirgacheffe.png",
+        "picture": "foodapp_pics/Ethiopian_yirgacheffe.jpg",
         "caffeine": 100,
         "rating": "4.00"
       }
@@ -14,9 +14,9 @@
       "model": "coffee_api.Coffee",
       "pk": 2,
       "fields": {
-        "name": "costa_rican_tarraz\u00fa",
+        "name": "costa_rican_tarraz",
         "description": "Offers a light and crisp body with notes of bright citrus, floral tones, and a subtle nuttiness.",
-        "picture": "coffee/costa_rican_tarrazu.png",
+        "picture": "foodapp_pics/Costa_Recan_Tarrazu.jpg",
         "caffeine": 90,
         "rating": "3.00"
       }
@@ -27,7 +27,7 @@
       "fields": {
         "name": "colombian_supremo",
         "description": "Known for its mild acidity, medium body, and notes of bright citrus, caramel, and chocolate.",
-        "picture": "coffee/columbian_supremo.jpeg",
+        "picture": "foodapp_pics/Colombian_Supremo.jpg",
         "caffeine": 115,
         "rating": "3.00"
       }
@@ -38,7 +38,7 @@
       "fields": {
         "name": "kenyan_aa",
         "description": "Has a bright acidity with wine-like characteristics, often featuring fruity and citrusy notes.",
-        "picture": "coffee/kenya_aa.jpeg",
+        "picture": "foodapp_pics/Kenya_aa.jpg",
         "caffeine": 95,
         "rating": "4.00"
       }
@@ -49,7 +49,7 @@
       "fields": {
         "name": "guatemalan_antigua",
         "description": "Offers a balanced cup with medium acidity, full body, and flavors of chocolate, caramel, and mild fruity notes.",
-        "picture": "coffee/guatemalan_antigua.jpeg",
+        "picture": "foodapp_pics/Guatemala_Antigua.jpg",
         "caffeine": 145,
         "rating": "3.00"
       }
@@ -60,7 +60,7 @@
       "fields": {
         "name": "brazilian_santos",
         "description": "Known for its mild acidity, medium body, and nutty, chocolatey flavors with a slight hint of fruitiness.",
-        "picture": "coffee/brazilian_santos.png",
+        "picture": "foodapp_pics/Brazilian_Santos.jpg",
         "caffeine": 125,
         "rating": "3.00"
       }
@@ -71,7 +71,7 @@
       "fields": {
         "name": "mexican_chiapas",
         "description": "Medium-bodied coffee with balanced acidity, featuring flavors of dark chocolate, nuts, and a touch of bright citrus.",
-        "picture": "coffee/mexican_chiapas.png",
+        "picture": "foodapp_pics/Mexican_chiapas.jpg",
         "caffeine": 110,
         "rating": "3.00"
       }
@@ -82,7 +82,7 @@
       "fields": {
         "name": "sumatra_mandheling",
         "description": "Full-bodied coffee with low acidity, known for its earthy, herbal, and chocolatey flavors.",
-        "picture": "coffee/sumatra_mandheling.png",
+        "picture": "foodapp_pics/Sumatra_mandheling.jpg",
         "caffeine": 120,
         "rating": "4.00"
       }
@@ -93,7 +93,7 @@
       "fields": {
         "name": "italian_roast",
         "description": "Deep, dark and shiny beans with bold, smoky flavors and a rich, full body. Minimal acidity.",
-        "picture": "coffee/italian_roast.jpeg",
+        "picture": "foodapp_pics/Italian_Roast.jpg",
         "caffeine": 85,
         "rating": "3.00"
       }
@@ -104,7 +104,7 @@
       "fields": {
         "name": "french_roast",
         "description": "Very dark with a glossy surface, characterized by strong, robust flavors, often with a charred quality.",
-        "picture": "coffee/french_roast.jpeg",
+        "picture": "foodapp_pics/French_roast.jpg",
         "caffeine": 85,
         "rating": "3.00"
       }
@@ -115,7 +115,7 @@
       "fields": {
         "name": "vienna_roast",
         "description": "Dark, but not as extreme as French or Italian roasts. Features a full body with a slight smokiness and dark caramelized sugars.",
-        "picture": "coffee/vienna_roast.jpeg",
+        "picture": "foodapp_pics/Vienna_Roast.jpg",
         "caffeine": 85,
         "rating": "3.00"
       }
@@ -126,7 +126,7 @@
       "fields": {
         "name": "spanish_roast",
         "description": "Extremely dark and often has a noticeable charred flavor, with very low acidity and a heavy body.",
-        "picture": "coffee/spanish_roast.jpeg",
+        "picture": "foodapp_pics/Spanish_roast.jpg",
         "caffeine": 80,
         "rating": "3.00"
       }
@@ -137,7 +137,7 @@
       "fields": {
         "name": "vanilla_latte",
         "description": "Made with espresso, steamed milk, and a shot of vanilla syrup. Topped with a dollop of frothed milk.",
-        "picture": "coffee/vanilla_latte.jpeg",
+        "picture": "foodapp_pics/Vanilla_Latte.jpg",
         "caffeine": 150,
         "rating": "3.00"
       }
@@ -148,7 +148,7 @@
       "fields": {
         "name": "caramel_latte",
         "description": "Made with espresso, steamed milk, and a shot of caramel syrup. Topped with a dollop of frothed milk.",
-        "picture": "coffee/caramel_latte.jpeg",
+        "picture": "foodapp_pics/Caramel_latte.jpg",
         "caffeine": 115,
         "rating": "3.00"
       }
@@ -159,7 +159,7 @@
       "fields": {
         "name": "hazelnut_latte",
         "description": "Made with espresso, steamed milk, and a shot of hazelnut syrup. Topped with a dollop of frothed milk.",
-        "picture": "coffee/hazelnut_latte.jpeg",
+        "picture": "foodapp_pics/hazelnut_latte.jpg",
         "caffeine": 115,
         "rating": "3.00"
       }
@@ -170,7 +170,7 @@
       "fields": {
         "name": "mocha_latte",
         "description": "Combines espresso, steamed milk, and chocolate syrup, creating a rich, chocolatey coffee drink.",
-        "picture": "coffee/mocha_latte.jpeg",
+        "picture": "foodapp_pics/Mocha_latte.jpg",
         "caffeine": 115,
         "rating": "3.00"
       }
@@ -181,7 +181,7 @@
       "fields": {
         "name": "doppio",
         "description": "A double shot of espresso, providing a strong, concentrated coffee flavor.",
-        "picture": "coffee/doppio_espresso.jpeg",
+        "picture": "foodapp_pics/Doppio.jpg",
         "caffeine": 64,
         "rating": "3.00"
       }
@@ -192,7 +192,7 @@
       "fields": {
         "name": "ristretto",
         "description": "A shorter, even more concentrated shot of espresso, extracted with less water for an intense, bold taste.",
-        "picture": "coffee/ristretto_espresso.jpeg",
+        "picture": "foodapp_pics/Ristretto.jpg",
         "caffeine": 68,
         "rating": "3.00"
       }
@@ -203,7 +203,7 @@
       "fields": {
         "name": "cortado",
         "description": "Made by combining equal parts espresso and steamed milk, resulting in a balanced and creamy coffee.",
-        "picture": "coffee/cortado_espresso.jpeg",
+        "picture": "foodapp_pics/Cortado.jpg",
         "caffeine": 64,
         "rating": "3.00"
       }
@@ -214,7 +214,7 @@
       "fields": {
         "name": "macchiato",
         "description": "Espresso \"stained\" or \"marked\" with a small amount of frothy milk, offering a strong coffee flavor with a hint of creaminess.",
-        "picture": "coffee/macchiato_espresso.jpeg",
+        "picture": "foodapp_pics/Macchiato.jpg",
         "caffeine": 70,
         "rating": "3.00"
       }
