@@ -15,11 +15,11 @@ DOCKERHUB_UNAME=dlamarg
 BASE_URL=$1
 NEW_VERSION=$2
 
-docker build --build-arg VITE_BASE_URL=$BASE_URL -t $DOCKERHUB_UNAME/tea-and-coffee_webserver-prod:$NEW_VERSION -f webserver/Dockerfile . --no-cache
+docker buildx build --platform linux/amd64 --build-arg VITE_BASE_URL=$BASE_URL -t $DOCKERHUB_UNAME/tea-and-coffee_webserver-prod:$NEW_VERSION -f webserver/Dockerfile . --no-cache
 docker push $DOCKERHUB_UNAME/tea-and-coffee_webserver-prod:$NEW_VERSION
 
 # docker build -t VITE_BASE_URL=$BASE_URL $DOCKERHUB_UNAME/coin_webserver-prod:$NEW_VERSION -f webserver/Dockerfile . --no-cache
 # docker push $DOCKERHUB_UNAME/coin_webserver-prod:$NEW_VERSION
 
-docker build -t $DOCKERHUB_UNAME/tea-and-coffee_api-prod:$NEW_VERSION -f backend/Dockerfile ./backend --no-cache
+docker buildx build --platform linux/amd64 -t $DOCKERHUB_UNAME/tea-and-coffee_api-prod:$NEW_VERSION -f backend/Dockerfile ./backend --no-cache
 docker push $DOCKERHUB_UNAME/tea-and-coffee_api-prod:$NEW_VERSION
